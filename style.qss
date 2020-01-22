@@ -1,0 +1,5 @@
+QLCDNumber#lcdNumber_20
+{
+    color:rgb(0,203,30);
+    background-color:green;
+}

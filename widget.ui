@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1303</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>股票期权交易数据监控展示</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #576d88;
+color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>18</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+font: 75 18pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 14pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="title">
+      <string>数据展示</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="11" column="4">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>深圳参与客户数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_7">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_15">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_8">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;
+font: 14pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_17">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_28">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="7" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_22">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_11">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_2">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="3" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_27">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_5">
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>14</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;
+font: 75 14pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="digitCount">
+           <number>5</number>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_13">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="3">
+         <widget class="QLCDNumber" name="lcdNumber_6">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLCDNumber" name="lcdNumber">
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>14</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;
+font: 75 14pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="5">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>深圳委托待报</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_3">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="4">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>深圳委托峰值</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="4">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>深圳委托峰值时间点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="7">
+         <widget class="QLabel" name="label_31">
+          <property name="text">
+           <string>次席委托总笔数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>深圳委托总金额</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="7">
+         <widget class="QLabel" name="label_32">
+          <property name="text">
+           <string>次席委托总金额</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="1">
+         <widget class="QLabel" name="label_27">
+          <property name="text">
+           <string>上海成交峰值</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_9">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="Line" name="line_16">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="2">
+         <widget class="Line" name="line_19">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="2">
+         <widget class="Line" name="line_22">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="6">
+         <widget class="Line" name="line_24">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="Line" name="line_14">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <widget class="Line" name="line_18">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="Line" name="line_15">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="2">
+         <widget class="Line" name="line_21">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="2">
+         <widget class="Line" name="line_23">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="6">
+         <widget class="Line" name="line_25">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="6">
+         <widget class="Line" name="line_28">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="8">
+         <widget class="Line" name="line_20">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_16">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="6">
+         <widget class="Line" name="line_27">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="6">
+         <widget class="Line" name="line_30">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="6">
+         <widget class="Line" name="line_26">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="6">
+         <widget class="Line" name="line_29">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1" colspan="8">
+         <widget class="Line" name="line_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1" colspan="8">
+         <widget class="Line" name="line_10">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1" colspan="8">
+         <widget class="Line" name="line_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1" colspan="8">
+         <widget class="Line" name="line_12">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="6">
+         <widget class="Line" name="line_31">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="8">
+         <widget class="Line" name="line_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_10">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1" colspan="8">
+         <widget class="Line" name="line_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1" colspan="8">
+         <widget class="Line" name="line_13">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="6">
+         <widget class="Line" name="line_32">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="3" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_21">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="1">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>上海委托未报</string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="1">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>上海委托待报</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="7" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_20">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="5">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>深圳委托未报</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="5">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>深圳委托正报</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="6">
+         <widget class="Line" name="line_42">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="1">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>上海委托正报</string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="1" colspan="8">
+         <widget class="Line" name="line_40">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="3" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_19">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" rowspan="29">
+         <widget class="Line" name="line_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="2">
+         <widget class="Line" name="line_44">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="6">
+         <widget class="Line" name="line_43">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="2">
+         <widget class="Line" name="line_41">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="6">
+         <widget class="Line" name="line_45">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="6">
+         <widget class="Line" name="line_49">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="1" colspan="8">
+         <widget class="Line" name="line_46">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="9" rowspan="29">
+         <widget class="Line" name="line_33">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="2">
+         <widget class="Line" name="line_48">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="24" column="1" colspan="8">
+         <widget class="Line" name="line_39">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1" colspan="8">
+         <widget class="Line" name="line_36">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1" colspan="8">
+         <widget class="Line" name="line_34">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="2">
+         <widget class="Line" name="line_35">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="2">
+         <widget class="Line" name="line_37">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="6">
+         <widget class="Line" name="line_38">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_29">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_4">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_12">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_18">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>深圳委托总笔数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>上海委托峰值</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="4">
+         <widget class="QLabel" name="label_28">
+          <property name="text">
+           <string>深圳成交峰值</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="4">
+         <widget class="QLabel" name="label_30">
+          <property name="text">
+           <string>深圳成交峰值时间点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="Line" name="line_17">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>深圳开户数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="3" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_25">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="1">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>上海报盘确认</string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="7" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_24">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="5">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>深圳报盘确认</string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="7" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_26">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="1">
+         <widget class="QLabel" name="label_24">
+          <property name="text">
+           <string>撤单3次废单</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="8">
+         <widget class="Line" name="line_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="4">
+         <widget class="QLabel" name="label_26">
+          <property name="text">
+           <string>深圳成交总金额</string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="1" colspan="8">
+         <widget class="Line" name="line_9">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="8">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="3" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber_23">
+          <property name="styleSheet">
+           <string notr="true">color: #50fdff;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="5">
+         <widget class="QLCDNumber" name="lcdNumber_14">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="4">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>深圳成交总笔数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>上海委托总笔数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>上海成交总笔数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>上海开户数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>上海委托总金额</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1">
+         <widget class="QLabel" name="label_25">
+          <property name="text">
+           <string>上海成交总金额</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="1">
+         <widget class="QLabel" name="label_29">
+          <property name="text">
+           <string>上海成交峰值时间点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>上海委托峰值时间点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>上海参与客户数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="7">
+         <widget class="QLabel" name="label_33">
+          <property name="text">
+           <string>次席委托峰值</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="7">
+         <widget class="QLabel" name="label_34">
+          <property name="text">
+           <string>次席委托峰值时间点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="7">
+         <widget class="QLabel" name="label_35">
+          <property name="text">
+           <string>次席成交总笔数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="7">
+         <widget class="QLabel" name="label_36">
+          <property name="text">
+           <string>次席成交总金额</string>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="7">
+         <widget class="QLabel" name="label_37">
+          <property name="text">
+           <string>次席成交峰值</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="7">
+         <widget class="QLabel" name="label_38">
+          <property name="text">
+           <string>次席成交峰值时间点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="8">
+         <widget class="QLCDNumber" name="lcdNumber_30">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="8">
+         <widget class="QLCDNumber" name="lcdNumber_31">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="8">
+         <widget class="QLCDNumber" name="lcdNumber_32">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="8">
+         <widget class="QLCDNumber" name="lcdNumber_33">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="8">
+         <widget class="QLCDNumber" name="lcdNumber_34">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="8">
+         <widget class="QLCDNumber" name="lcdNumber_35">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="8">
+         <widget class="QLCDNumber" name="lcdNumber_36">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="8">
+         <widget class="QLCDNumber" name="lcdNumber_37">
+          <property name="styleSheet">
+           <string notr="true">color: #0bff79;</string>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
